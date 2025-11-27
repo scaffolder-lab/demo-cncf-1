@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: demo-cncf-1
-          image: quay.io/angelsanchezdev/demo-cncf-1:latest
+          image: quay.io/angelsanchezdev/demo-cncf-1:bd88ef575d2bfef2e267b7a078dc103fac986d2e
           imagePullPolicy: Always
           ports:
             - containerPort: 80
