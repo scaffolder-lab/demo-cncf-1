@@ -1,0 +1,7 @@
+site_name: demo-cncf-1
+site_description: Documentation for demo-cncf-1
+nav:
+  - Home: index.md
+  - Architecture: architecture.md
+plugins:
+  - techdocs-core

@@ -1,0 +1,38 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: demo-cncf-1
+  description: Landing page for Cloud Native Latam Summit
+  annotations:
+    github.com/project-slug: scaffolder-lab/demo-cncf-1
+    argocd/app-name: demo-cncf-1
+    argocd/app-namespace: argocd
+    argocd/instance-name: main
+    backstage.io/kubernetes-id: demo-cncf-1
+    backstage.io/kubernetes-namespace: demo-apps
+    backstage.io/kubernetes-label-selector: app=demo-cncf-1
+    backstage.io/techdocs-ref: dir:.
+    quay.io/repository-slug: angelsanchezdev/demo-cncf-1
+  links:
+    - url: https://github.com/scaffolder-lab/demo-cncf-1
+      title: GitHub Repository
+      icon: github
+    - url: https://github.com/scaffolder-lab/demo-cncf-1/actions
+      title: GitHub Actions
+      icon: dashboard
+    - url: https://quay.io/repository/angelsanchezdev/demo-cncf-1
+      title: Container Image
+      icon: docker
+    - url: http://localhost:8080/applications/argocd/demo-cncf-1
+      title: ArgoCD App
+      icon: cloud
+  tags:
+    - landing
+    - kubernetes
+    - event
+    - gitops
+spec:
+  type: website
+  lifecycle: production
+  owner: guests
+  system: landing-system
